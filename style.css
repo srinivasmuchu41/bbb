@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#section1{
+    position: relative;
+    background-image: url(https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29kZXJ8ZW58MHx8MHx8&w=1000&q=80);
+    background-size: cover;
+    background-position: top center;
+    z-index: 1;
+}
+#section1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(208, 238, 238);
+    opacity: 0.3;
+    z-index: -1;
+} 
+.container h2 {
+    position: absolute;
+    top: 150px; 
+    left: 350px;
+    font-size: 25px;
+    color: rgb(248, 232, 232);
+}
+.container .forPortButton{
+    position: absolute;
+    bottom: 100px; 
+    left: 350px;
+    padding: 10px;
+    margin: 2px;
+    border: 3px solid rgb(0, 255, 170);
+    background-color: transparent;
+    color: rgb(0, 255, 170);
+    font-size: 20px;
+}
+.container .forPortButton:hover{
+    background-color: aqua;
+    color: red;
+    font-weight: bold;    
+}
+.container .forPortButton:focus{
+    background-color: rgb(185, 158, 158);
+}
+#header{
+    position: fixed;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    z-index: 5;
+}
+#header #header-container{
+    position: relative;
+    height: 8vh;
+    background-color: rgba(31, 30, 30, 0.24);
+}
+#header #logo{
+    position: relative;
+    font-size: 25px;
+    left: 150px;
+    top: 10px;
+    font-family: cursive;
+    color:rgb(0, 255, 170);
+}
+#header #menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+}
+#header #menu #ul-menu{
+    list-style: none;
+    position: absolute;
+    width: 100vw;
+    left: 200px;
+    top: 20px;
+    display: grid;
+    grid-template-columns: 3cm 3cm 3cm 3cm;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: whitesmoke;
+}
+#header #menu ul a{
+    
+}
+
+/* About Start form here */
+#section2 .About-container{
+    position: absolute;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: left;
+    min-height: 100vh;
+    /* align-items: center; */
+    width: 100%;
+    background-image: url(https://media.istockphoto.com/photos/portrait-of-cheerful-excited-joyful-satisfied-handsome-attractive-picture-id1034391536?b=1&k=20&m=1034391536&s=170667a&w=0&h=n-oZ0kbpnvx8FZxQeOde-3wP44--Dp3jEPbz0mPXo2I=);
+    background-size: cover;
+}
+#section2 .h1-section2{
+    position: relative;
+    text-transform: uppercase;
+    top: 60px;
+    left: 150px;
+    text-align: center;
+    font-size: 50px;
+} 
+#section2 .About-container .rigth-part{
+    position: relative;
+    top: 150px;
+    left: 20px;
+    height: 400px;
+    width: 400px;
+    padding: 10px;
+    margin: 10px;
+    /* background-color: aliceblue; */
+}
+#section2 .rigth-part .h3-section2{
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    line-height: 2.5em;
+}
+#section2 .rigth-part .description{
+    position:relative;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5em;
+}
+#section2 .rigth-part #download-resume{
+    position: relative;
+    top: 100px;
+    padding: 10px;
+    margin: 10px;
+    left: 70px;
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+} 
+/*Project section start from here */
+#project-section{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    top: 1300px;
+    height: 1400px;
+    background-color: rgb(215, 221, 221);
+    text-align: center;
+}
+#project-section .project-container{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+}
+#project-section #main-title{
+    position: relative;
+    font-size: 50px;
+    padding: 2px; 
+    margin: 2px;
+    text-align: center;
+}
+.project-container .project{
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    padding: 10px;
+    margin: 5px;
+    width: 500px;
+    left: 400px;
+    border: 2px solid black;
+    background-image: url(https://thumbs.dreamstime.com/z/exercise-book-jotter-pen-blank-58851780.jpg);
+    background-size: cover;
+    /* text-align: center; */    
+}
+.project .span{
+    font-size: 20px;
+    text-align:center;
+    font-weight: 600;
+}
+.project p{
+    font-size: 15px;
+    margin: 3px;
+    /* color: rgb(146, 126, 202); */
+}
+/*contact section start from here */
+#contact-section {
+    position: relative;
+    top: 2025px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(215, 221, 221);
+}
+#contact-section #contact-title{
+    display: relative;
+    padding: 10px;
+    margin: 10px;
+    padding: 60px 130px;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: left;
+}
+#contact-section .contact-container{
+    position: relative;
+    display: grid;
+    padding: 20px;
+    margin: 10px;
+    height: 100px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: transparent;
+}
+.contact-container .box{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+.box h2{
+    font-size: 15px;
+}
+.box detail{
+    font-size: 12px;
+}
